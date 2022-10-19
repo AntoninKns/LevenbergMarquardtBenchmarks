@@ -1,4 +1,4 @@
 #!/bin/bash
 
 julia --project -E 'using Pkg; Pkg.instantiate(); Pkg.update(); Pkg.resolve()'
-julia --project src/DistributedScript.jl 3
+julia --project utils/DistributedScript.jl 3
