@@ -7,14 +7,14 @@ You can either fully run your scripts and benchmark on frontal22 or launch the t
 In order to launch the test you need to have acces to frontal22 and in your personal directory launch the command 
 
 ```
-git clone https://github.com/AntoninKns/LevenbergMarquardt.jl.git
+git clone https://github.com/AntoninKns/LevenbergMarquardtBenchmarks.git
 ```
 
-Once it is done go to the LevenbergMarquardt.jl directory
+Once it is done go to the LevenbergMarquardtBenchmarks directory
 
 ## Launch the benchmarks
 
-The benchmarks are launched from the LevenbergMarquardt.jl directory using the ``run_benchmarks.sh`` script. It will launch the 21 partition scripts that will then launch the ``DistributedScript.jl`` file.
+The benchmarks are launched from the LevenbergMarquardtBenchmarks directory using the ``run_benchmarks.sh`` script. It will launch the 21 partition scripts that will then launch the ``DistributedScript.jl`` file.
 
 You can change the partitions by modifying the ``Partitions.jl`` file and then adapting the different scripts.
 
@@ -24,7 +24,7 @@ Once the benchmarks have generated the JLD2 files you can either run the ``retri
 
 ## Generate the stats
 
-Once you have got the JLD2 files on the machine where you want to generate the stats tables and performance profiles you can type ``include("benchmark/generate_stats.jl")`` from a julia REPL in the LevenbergMarquardt.jl directory.
+Once you have got the JLD2 files on the machine where you want to generate the stats tables and performance profiles you can type ``include("Generate_stats.jl")`` from a julia REPL in the LevenbergMarquardt.jl directory.
 
 ## Clean environment
 
