@@ -14,7 +14,7 @@ Once it is done go to the LevenbergMarquardt.jl directory
 
 ## Launch the benchmarks
 
-The benchmarks are launched from the LevenbergMarquardt.jl directory using the ``run_benchmarks.sh`` script. It will launch the 21 partition scripts that will then launch the ``distributed_benchmarks.jl`` file.
+The benchmarks are launched from the LevenbergMarquardt.jl directory using the ``run_benchmarks.sh`` script. It will launch the 21 partition scripts that will then launch the ``DistributedScript.jl`` file.
 
 You can change the partitions by modifying the ``Partitions.jl`` file and then adapting the different scripts.
 

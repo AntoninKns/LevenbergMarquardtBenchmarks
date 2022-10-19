@@ -1,5 +1,3 @@
-using SolverBenchmark, LevenbergMarquardt, BundleAdjustmentModels, Plots, Dates, DataFrames, JLD2
-
 """
 Function that scan the JLD2_files directory and generate stats tables and performance profiles
 based on JLD2 archives, `solvers`, `costnames` and `costs`.

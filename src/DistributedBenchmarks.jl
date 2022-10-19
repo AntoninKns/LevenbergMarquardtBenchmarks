@@ -1,5 +1,3 @@
-using SolverBenchmark, LevenbergMarquardt, BundleAdjustmentModels, Plots, Dates, DataFrames, JLD2, Printf, NLPModels, Logging
-
 """
 Function that solves problems based on their partition number and the partition list and saves the stats in a JLD2 file.
 """
@@ -145,15 +143,3 @@ function solve_problems_lm(solver, problems, directory;
   end
   return stats
 end
-
-# Get the solver and partition number and launch the distributed benchmark
-function main(args)
-  solvers = Dict(:LM_facto => (model, io) -> levenberg_marquardt_facto(model, logging = io),
-                )
-
-  partition_number = parse(Int64, args[1])
-
-  lm_distributed_benchmark(solvers, partition_number)
-end
-
-main(ARGS)

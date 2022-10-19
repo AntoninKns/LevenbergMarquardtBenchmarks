@@ -1,9 +1,7 @@
 # This file is not up to date
 
-using SolverBenchmark, LevenbergMarquardt, BundleAdjustmentModels, Dates, DataFrames
-ENV["GKSwstype"]="100"
-using Plots
-gr()
+# ENV["GKSwstype"]="100"
+# gr()
 
 """
 Function that generates logging information and performance profile for a given set of `problems` 

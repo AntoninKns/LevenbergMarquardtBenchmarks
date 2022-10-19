@@ -1,5 +1,3 @@
-using LevenbergMarquardt, BundleAdjustmentModels, Dates, DataFrames, JLD2
-
 function greedy_partition(elements :: DataFrame, n_partitions :: Integer, criteria :: Symbol)
 
   partition_list = [Vector{Tuple{String,Number}}(undef,0) for _ in 1:n_partitions]
