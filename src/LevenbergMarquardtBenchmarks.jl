@@ -1,3 +1,4 @@
+module LevenbergMarquardtBenchmarks
 
 using SolverBenchmark, LevenbergMarquardt, BundleAdjustmentModels, NLPModels
 using Plots, Dates, DataFrames, JLD2, Printf, Logging
@@ -7,3 +8,5 @@ include("DistributedBenchmarks.jl")
 include("GeneratePartitions.jl")
 include("GenerateStats.jl")
 include("Partitions.jl")
+
+end # module
