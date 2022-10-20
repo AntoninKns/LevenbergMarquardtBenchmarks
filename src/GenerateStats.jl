@@ -63,4 +63,4 @@ costs = [stats -> .!solved(stats) .* Inf .+ stats.elapsed_time,
           stats -> .!solved(stats) .* Inf .+ stats.neval_jprod_residual]
 
 # We generate the files
-generate_stats(solvers, costnames, costs)
+# generate_stats(solvers, costnames, costs)

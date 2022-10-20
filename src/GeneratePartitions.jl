@@ -59,4 +59,4 @@ end
 solvers = [:LM, :LM_TR]
 n_partitions = 5
 
-generate_partitions(solvers, n_partitions)
+# generate_partitions(solvers, n_partitions)

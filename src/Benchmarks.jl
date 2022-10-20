@@ -14,7 +14,7 @@ function lm_benchmark(solvers :: Dict,
                       directory :: String = @__DIR__)
 
   # We generate the problem out of the problems dataframe
-  problem_list = (BundleAdjustmentModel(problem[1],problem[2]) for problem in eachrow(problems))
+  problem_list = (BundleAdjustmentModel(problem[1]) for problem in eachrow(problems))
 
   # We solve the problems with the given solvers
   stats = bmark_solvers(solvers, problem_list)
@@ -52,4 +52,4 @@ costs = [stats -> .!solved(stats) .* Inf .+ stats.elapsed_time,
           stats -> .!solved(stats) .* Inf .+ stats.neval_residual]
 
 # We launch the benchmarks
-lm_benchmark(solvers, problems, costnames, costs)
+# lm_benchmark(solvers, problems, costnames, costs)

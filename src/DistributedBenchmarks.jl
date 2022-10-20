@@ -1,3 +1,5 @@
+export lm_distributed_benchmark
+
 """
 Function that solves problems based on their partition number and the partition list and saves the stats in a JLD2 file.
 """
